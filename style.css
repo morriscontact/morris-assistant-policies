@@ -1,0 +1,24 @@
+:root { color-scheme: dark; --bg: #0b1020; --panel: #121a2c; --line: #25314a; --text: #f2f5fb; --muted: #a5b1c7; --accent: #8b9cff; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 50% 0, #1d2b4b 0, var(--bg) 55%); color: var(--text); font: 16px/1.75 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+a { color: #b9c4ff; text-underline-offset: 3px; }
+.shell { width: min(820px, calc(100% - 36px)); margin: 0 auto; padding: 76px 0 48px; }
+.hero { padding: 36px; border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(135deg, #182541, #111929 70%); box-shadow: 0 24px 90px #0005; }
+.eyebrow { color: var(--accent); font-size: .75rem; font-weight: 700; letter-spacing: .18em; }
+h1, h2, strong { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+h1 { margin: 10px 0; font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1.1; letter-spacing: -.04em; }
+.hero p, .muted { color: var(--muted); }
+.cards { display: grid; gap: 14px; margin: 20px 0; }
+.card { display: grid; grid-template-columns: 48px 1fr 24px; align-items: center; gap: 16px; padding: 20px; border: 1px solid var(--line); border-radius: 18px; color: var(--text); background: #111827dd; text-decoration: none; transition: transform .18s, border-color .18s; }
+.card:hover { transform: translateY(-2px); border-color: #6978bb; }
+.card strong, .card small { display: block; }
+.card small { margin-top: 3px; color: var(--muted); }
+.icon { display: grid; width: 46px; height: 46px; place-items: center; border-radius: 14px; color: #d5dcff; background: #28345a; font-size: 1.4rem; font-weight: 700; }
+footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+.document { max-width: 780px; }
+.document h1 { margin-top: 16px; }
+.document h2 { margin: 34px 0 8px; font-size: 1.2rem; }
+.document p, .document li { color: #d3d9e6; }
+.document .back { display: inline-block; margin-bottom: 42px; color: var(--muted); text-decoration: none; }
+.document .back:hover { color: var(--text); }
+@media (max-width: 560px) { .shell { padding-top: 28px; } .hero { padding: 26px; } .card { padding: 16px; gap: 12px; } }
